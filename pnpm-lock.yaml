@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  fast-shuffle:
+    specifier: ^6.0.1
+    version: 6.0.1
+
 devDependencies:
   '@total-typescript/ts-reset':
     specifier: ^0.4.2
@@ -2207,6 +2212,15 @@ packages:
       }
     dev: true
 
+  /fast-shuffle@6.0.1:
+    resolution:
+      {
+        integrity: sha512-hzvJr6LEBCsK0hKiOIndVmpmv6BDi5MxWqD0YubjG2SDHV6WLAEI8DTgHXR0odz3Mp2MC7y/A/KTqpS3RMhngA==,
+      }
+    dependencies:
+      pcg: 1.0.0
+    dev: false
+
   /fastq@1.15.0:
     resolution:
       {
@@ -3040,6 +3054,13 @@ packages:
       wrap-ansi: 6.2.0
     dev: true
 
+  /long@5.2.3:
+    resolution:
+      {
+        integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==,
+      }
+    dev: false
+
   /loupe@2.3.6:
     resolution:
       {
@@ -3531,6 +3552,16 @@ packages:
       }
     dev: true
 
+  /pcg@1.0.0:
+    resolution:
+      {
+        integrity: sha512-6wjoSJZ4TEJhI0rLDOKd5mOu6TwS4svn9oBaRsD1PCrhlDNLWAaTimWJgBABmIGJxzkI+RbaHJYRLGVf9QFE5Q==,
+      }
+    dependencies:
+      long: 5.2.3
+      ramda: 0.29.0
+    dev: false
+
   /picocolors@1.0.0:
     resolution:
       {
@@ -3644,6 +3675,13 @@ packages:
       }
     engines: { node: '>=8' }
     dev: true
+
+  /ramda@0.29.0:
+    resolution:
+      {
+        integrity: sha512-BBea6L67bYLtdbOqfp8f58fPMqEwx0doL+pAi8TZyp2YWz8R9G8z9x75CZI8W+ftqhFHCpEX2cRnUUXK130iKA==,
+      }
+    dev: false
 
   /react-is@17.0.2:
     resolution:
