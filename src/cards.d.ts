@@ -15,7 +15,7 @@ type Rank =
   | 'Queen'
   | 'King';
 
-type PincholeRank = 'Ace' | 'King' | 'Queen' | 'Jack' | 10 | 9;
+type PinocleRank = 'Ace' | 'King' | 'Queen' | 'Jack' | 10 | 9;
 
 type CardName = `${Rank} of ${Suit}`;
 
@@ -23,4 +23,4 @@ type CardValues = readonly Partial<Record<Partial<Rank>, number>>;
 
 type TraditionalValues = readonly Required<CardValues>;
 
-type PinocleValues = readonly Required<Pick<TraditionalValues, PincholeRank>>;
+type PinocleValues = readonly Required<Pick<TraditionalValues, PinocleRank>>;
